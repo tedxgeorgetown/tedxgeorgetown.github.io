@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  width: 300px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+a .logo-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+.navbar-fixed-top {
+  min-height: 120px;
+}
+
+/*
+h1 {
+color: rgba(0, 0, 0, .3);
+font-weight: bold;
+font-size: 32px;
+letter-spacing: -1px;
+text-transform: uppercase;
+text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+background: url("../images/middleman.png") no-repeat center 100px;
+padding: 350px 0 10px;
+margin: 0; }
+
+.doc {
+font-size: 14px;
+margin: 0; }
+.doc:before,
+.doc:after {
+opacity: .2;
+padding: 6px;
+font-style: normal;
+position: relative;
+content: "•"; }
+.doc a {
+color: rgba(0, 0, 0, 0.3); }
+.doc a:hover {
+color: #666; }
+
+.welcome {
+-webkit-animation-name: welcome;
+-webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+from {
+-webkit-transform: scale(0);
+opacity: 0;
+}
+50% {
+-webkit-transform: scale(0);
+opacity: 0;
+}
+82.5% {
+-webkit-transform: scale(1.03);
+-webkit-animation-timing-function: ease-out;
+opacity: 1;
+}
+to {
+-webkit-transform: scale(1);
+}
+}*/
