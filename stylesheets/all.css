@@ -69,12 +69,71 @@ div.caption {
 
 h1.main {
   font-size: 70px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 2500;
 }
 
-.red {
-  color: red;
+.tred {
+  color: #e62b1e;
+  font-style: Arial, Helvetica, sans-serif;
 }
 
+.about-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.about-text p {
+  font-size: 16px;
+}
 
+.logo-text-top {
+  padding-top: 15px;
+}
+
+.logo-text-middle {
+  margin-top: -20px;
+}
+
+.logo-text-bottom {
+  margin-top: -20px;
+  padding-bottom: 5px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.theme-text-top {
+  /*padding-top: 65px;*/
+  font-size: 16px;
+}
+
+.theme-text-bottom {
+  font-size: 16px;
+}
+
+.theme-head {
+  padding-top: 55px;
+}
+
+.last-year-text {
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+}
+
+.back-soon {
+  width: 80%;
+  margin: auto;
+}
+
+.schedule {
+  margin-top: -10px;
+}
+
+div.marketing {
+
+}
 
