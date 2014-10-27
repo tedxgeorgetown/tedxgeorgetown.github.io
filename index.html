@@ -303,14 +303,18 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">TEDx Georgetown</a>
+            <a class="brand" href="#">TEDxGeorgetown</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="">Tickets</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#team">The Team</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -320,43 +324,30 @@
     </div><!-- /.navbar-wrapper -->
 
 
+    <div class="header-images">
+    	<img class="header-img" src="/images/tedx_elizabeth.jpg">
+    </div>
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="/images/tedx-sharp.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Tickets Now Available</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Buy Tickets</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Check Out the Speakers</h1>
-              <p class="lead">Our speakers range from blah blah blah to blah blah blah.</p>
-              <a class="btn btn-large btn-primary" href="#">View Speakers</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> -->
+      <!-- <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
 
+    <div class="container">
 
+    <div class="container-narrow">
+    <div class="caption">
+		<h1 class="main"><span class="red">TEDx</span>Georgetown</h1>
+		<p class="lead">Tickets now available.</p>
+		<a class="btn btn-large btn-danger" href="#">Buy Tickets</a>
+	</div>
+	</div>
+
+	<hr class="featurette-divider">
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div class="marketing" id="about">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -380,9 +371,20 @@
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
+<!-- VIDEOS -->
+
+	<hr class="featurette-divider">
+
+  	<div class="videos" id="watch">
+    	<iframe width="100%" height="500" src="//www.youtube.com/embed/EB6MY-CWj9s?list=PLsRNoUx8w3rMMDijjXBwQF7Mj_4Lp-yBV" frameborder="0" allowfullscreen></iframe>
+		<h2 class="featurette-heading">Check out our videos from last year. <span class="muted"></span></h2>
+		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+
 	  
 	  <hr class="featurette-divider">
 
+	<div class="speakers" id="speakers">
       <div class="row">
       	<div class="span4">
       		<h2>Person 1</h2>
@@ -418,38 +420,27 @@
       		<h2>Person 9</h2>
       	</div>
       </div>
+    </div>
 
 
-      <!-- START THE FEATURETTES -->
+	<hr class="featurette-divider">
 
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+	<div class="team" id="team">
+      <div class="row">
+      	<div class="span4">
+      		<h2>Teammate 1</h2>
+      	</div>
+      	<div class="span4">
+      		<h2>Teammate 2</h2>
+      	</div>
+      	<div class="span4">
+      		<h2>Teammate 3</h2>
+      	</div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
+      <hr class="featurette-divider">
 
       <!-- FOOTER -->
       <footer>
@@ -457,6 +448,7 @@
         <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
+    </div>
     </div><!-- /.container -->
 
 

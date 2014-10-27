@@ -3,6 +3,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 40px;
+  background-color: black;
 }
 
 .logo {
@@ -39,57 +40,41 @@ a .logo-padding {
   margin-top: 28px;
 }
 
+img.header-img {
+  width: 100%;
+  max-height: 100vh;
+  margin-top: -20px;
+  z-index: -1
+}
 
 .navbar-fixed-top {
   min-height: 120px;
 }
 
-/*
-h1 {
-color: rgba(0, 0, 0, .3);
-font-weight: bold;
-font-size: 32px;
-letter-spacing: -1px;
-text-transform: uppercase;
-text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-background: url("../images/middleman.png") no-repeat center 100px;
-padding: 350px 0 10px;
-margin: 0; }
+div.videos {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
-.doc {
-font-size: 14px;
-margin: 0; }
-.doc:before,
-.doc:after {
-opacity: .2;
-padding: 6px;
-font-style: normal;
-position: relative;
-content: "•"; }
-.doc a {
-color: rgba(0, 0, 0, 0.3); }
-.doc a:hover {
-color: #666; }
+div.container-narrow {
+  width: 70%;
+  margin-left: 15%;
+}
 
-.welcome {
--webkit-animation-name: welcome;
--webkit-animation-duration: .9s; }
+div.caption {
+  margin-top: -50vh;
+  color: white;
+  text-align: right;
+}
 
-@-webkit-keyframes welcome {
-from {
--webkit-transform: scale(0);
-opacity: 0;
+h1.main {
+  font-size: 70px;
 }
-50% {
--webkit-transform: scale(0);
-opacity: 0;
+
+.red {
+  color: red;
 }
-82.5% {
--webkit-transform: scale(1.03);
--webkit-animation-timing-function: ease-out;
-opacity: 1;
-}
-to {
--webkit-transform: scale(1);
-}
-}*/
+
+
+
+
