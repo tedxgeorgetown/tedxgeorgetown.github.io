@@ -78,6 +78,10 @@ h1.main {
   font-style: Arial, Helvetica, sans-serif;
 }
 
+.red {
+  color: #e62b1e;
+}
+
 .about-text {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -119,6 +123,7 @@ h1.main {
 
 .last-year-text {
   margin: auto;
+  padding-top: 15px;
   font-size: 16px;
   text-align: center;
   width: 70%;
@@ -133,7 +138,56 @@ h1.main {
   margin-top: -10px;
 }
 
-div.marketing {
-
+.twitter-button {
+  margin: auto;
 }
+
+.speaker-pic {
+  width: 200px;
+  border-radius: 50%;
+}
+
+h4.speaker-text {
+  width: 65%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+div.span5 {
+  text-align: center;
+}
+
+.first-row {
+  margin-top: 35px;
+}
+
+.other-row {
+  margin-top: 25px;
+}
+
+.invisible {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.visible {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+
+
+
+
+
+
+
 

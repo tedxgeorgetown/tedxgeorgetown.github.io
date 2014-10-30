@@ -2279,3 +2279,12 @@
 
 
 }(window.jQuery);
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > $(window).height()) {
+      $("#back-to-top").addClass("visable");
+      $("#back-to-top").removeClass("invisible");
+    } else {
+      ;
+    }
+});
