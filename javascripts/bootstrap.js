@@ -433,8 +433,7 @@
   }
 
   $.fn.carousel.defaults = {
-    interval: 5000
-  , pause: 'hover'
+    interval: 4000
   }
 
   $.fn.carousel.Constructor = Carousel

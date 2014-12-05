@@ -433,8 +433,7 @@
   }
 
   $.fn.carousel.defaults = {
-    interval: 5000
-  , pause: 'hover'
+    interval: 4000
   }
 
   $.fn.carousel.Constructor = Carousel
@@ -2280,11 +2279,33 @@
 
 }(window.jQuery);
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > $(window).height()) {
-      $("#back-to-top").addClass("visable");
-      $("#back-to-top").removeClass("invisible");
-    } else {
-      ;
-    }
+$('.carousel').carousel({
+  interval: 4000
+});
+
+$(document).ready(function() {
+  console.log("this works");
+
+  $("#brand").on('click', function() {
+    $('html, body').animate({scrollTop: 0}, 1000);
+  });
+
+  $("#about-link").on('click', function() {
+    $('html, body').animate({scrollTop:$(".about").offset().top - 100}, 1000);
+  });
+  $("#theme-link").on('click', function() {
+    $('html, body').animate({scrollTop:$(".theme").offset().top - 100}, 1000);
+  });
+  $("#watch-link").on('click', function() {
+    $('html, body').animate({scrollTop:$(".watch").offset().top - 100}, 1000)
+  });
+  $("#speakers-link").on('click', function() {
+    $('html, body').animate({scrollTop:$(".speakers").offset().top - 100}, 1000)
+  });
+  $("#team-link").on('click', function() {
+    $('html, body').animate({scrollTop:$(".team").offset().top - 100}, 1000)
+  });
+  $("#top").on('click', function() {
+    $('html, body').animate({scrollTop: 0}, 1000)
+  });
 });

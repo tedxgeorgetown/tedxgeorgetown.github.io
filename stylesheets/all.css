@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/*=============================================*/
+
+
+
+
 body {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -62,20 +67,27 @@ div.container-narrow {
 }
 
 div.caption {
-  margin-top: -50vh;
+  margin-top: -55vh;
   color: white;
   text-align: right;
+  position: absolute;
+  right: 10%;
 }
 
 h1.main {
   font-size: 70px;
-  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "Helvetica Neue Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 2500;
 }
 
-.tred {
+span.tred {
   color: #e62b1e;
-  font-style: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 2500;
+}
+
+.x {
+  margin-top: -10px;
 }
 
 .red {
@@ -126,12 +138,12 @@ h1.main {
   padding-top: 15px;
   font-size: 16px;
   text-align: center;
-  width: 70%;
 }
 
 .back-soon {
   width: 80%;
   margin: auto;
+  padding-bottom: 30px;
 }
 
 .schedule {
@@ -183,10 +195,41 @@ div.span5 {
   bottom: 10px;
 }
 
+.span3 {
+  text-align: center;
+}
 
+div.last-row {
+  margin-left: 10%;
+}
 
+.team-text {
 
+}
 
+.navbar {
+  position: fixed;
+  left: -5px;
+  width: 105%;
+  margin-top: -20px;
+}
+
+.sponsor-logo {
+  width: 90%;
+}
+
+.sweetgreen {
+  margin-left: 5%;
+}
+
+.navbar .brand {
+padding: 14px 20px 16px 50px;
+}
+
+.span7.videos.watch {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
 

@@ -21,14 +21,16 @@
     <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <!-- <link href="stylesheets/all.css" rel="stylesheet"> -->
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
+
     <style>
 
     /* GLOBAL STYLES
@@ -36,7 +38,8 @@
     /* Padding below the footer and lighter body text */
 
     body {
-      padding-bottom: 40px;
+      margin-top: 0px;
+      padding-top: 0px;
       color: #5a5a5a;
     }
 
@@ -92,12 +95,11 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
     }
 
     .carousel .container {
       position: relative;
-      z-index: 9;
+      z-index: -1;
     }
 
     .carousel-control {
@@ -111,14 +113,14 @@
     }
 
     .carousel .item {
-      height: 500px;
+      height: 100vh;
     }
     .carousel img {
       position: absolute;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      height: 100vh;
     }
 
     .carousel-caption {
@@ -204,11 +206,11 @@
       }
 
       .carousel .item {
-        height: 500px;
+        height: 100vh;
       }
       .carousel img {
         width: auto;
-        height: 500px;
+        height: 100vh;
       }
 
       .featurette {
@@ -227,9 +229,6 @@
 
     @media (max-width: 767px) {
 
-      .navbar-inner {
-        margin: -20px;
-      }
 
       .carousel {
         margin-left: -20px;
@@ -239,10 +238,10 @@
 
       }
       .carousel .item {
-        height: 300px;
+        height: 100vh;
       }
       .carousel img {
-        height: 300px;
+        height: 100vh;
       }
       .carousel-caption {
         width: 65%;
@@ -286,50 +285,77 @@
 
   </head>
 
-  <body>
-
-
+<body>
 
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
 
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+          <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <!-- <span class="icon-bar"></span> -->
+
+              <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">TEDxGeorgetown</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
+            <a id="brand" class="brand">TEDxGeorgetown</a>
+
+            <div class="nav-collapse">
               <ul class="nav">
-                <!-- <li><a href="">Tickets</a></li> -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#watch">Watch</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#team">The Team</a></li>
+
+                <li><a id="about-link">About TEDx</a></li>
+                <li><a id="theme-link">Theme</a></li>
+                <li><a id="speakers-link">Speakers</a></li>
+                <li><a id="watch-link">Watch</a></li>
+                <li><a id="team-link">The Team</a></li>
+
               </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
-
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
-
-<!--     <div id="back-to-top" class="invisible">
-      <p>hola</p>
-    </div> -->
-
-    <div class="header-images">
-    	<img class="header-img" src="/images/tedx_elizabeth.jpg">
+            </div>
+          </div>
+        </div>
+      </div> 
     </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="img-responsive" src="/images/tedx_elizabeth.jpg" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="/images/background2.png" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="/images/background3.png" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="/images/background4.png" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="/images/background5.png" alt="">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.carousel -->
+
+<!--     <div class="header-images">
+    	<img class="header-img img-responsive" src="/images/tedx_elizabeth.jpg">
+    </div> -->
 
       <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> -->
       <!-- <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
@@ -337,22 +363,20 @@
     <div class="container">
 
     <div class="container-narrow">
-    <div class="caption">
-		<h1 class="main"><span class="tred">TEDx</span>Georgetown</h1>
-		<p class="lead logo-text-top">12 Speakers. 1500 Participants. Gaston Hall.</p>
-		<p class="lead logo-text-middle">Saturday November 15th, 2014</p>
-		<p class="lead logo-text-bottom">Tickets now available.</p>
-		<a class="btn btn-large btn-danger" target="/blank" href="http://tedxgeorgetown.peatix.com/">Get Tickets</a>
+      <div class="caption">
+  		<h1 class="main"><span class="tred">TED<span class="x">x</span></span>Georgetown</h1>
+  		<p class="lead logo-text-top">12 Speakers. 1500 Participants. Gaston Hall.</p>
+  		<p class="lead logo-text-middle">Saturday November 15th, 2014</p>
+  		<p class="lead logo-text-bottom">Tickets now available.</p>
+  		<a class="btn btn-large btn-danger" target="/blank" href="http://tedxgeorgetown.peatix.com/">Get Tickets</a>
+  	</div>
 	</div>
-	</div>
-
-	<hr class="featurette-divider">
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="marketing" id="about">
+    <div class="marketing about" id="about">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -370,13 +394,13 @@
       <hr class="featurette-divider">
 
       <div class="row">
-        <div class="offset1 span5">
+        <div class="theme offset1 span5">
           <img class="" src="/images/themeannouncement.jpg">
         </div><!-- /.span5 -->
         <div class="span5">
           <h2 class="theme-head">Theme: Ithaca</h2>
           <p class="theme-text-top">Our theme this year really touches on education and achievement as a journey and we hope to create an inherent link to the Georgetown spirit. We would like TEDxGeorgetown to be a sharing of ideas that will come to be innovation and direction for the university. We find it imperative that the vision shapes the message that will resonate with the Georgetown community.</p>
-			<p class="theme-text-bottom">The title "Ithaca" is based on the poem about Ulysses' journey, the point being that it is the journey that matters, not the destination. Different speakers will share their perspectives on the foundation for the principles of a Georgetown education. The event will showcase what the Georgetown community is able to achieve and highlight individuals who have crafted a purpose for themselves and struck out on their own, from social entrepreneurship to advocacy to a successful career, in a way that contributes to the common good.</p>
+          <p class="theme-text-bottom">The title "Ithaca" is based on the poem about Ulysses' journey, the point being that it is the journey that matters, not the destination. Different speakers will share their perspectives on the foundation for the principles of a Georgetown education. The event will showcase what the Georgetown community is able to achieve and highlight individuals who have crafted a purpose for themselves and struck out on their own, from social entrepreneurship to advocacy to a successful career, in a way that contributes to the common good.</p>
           <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
         </div><!-- /.span5 -->
       </div><!-- /.row -->
@@ -388,32 +412,32 @@
 	<div class="row">
 		<div class="offset1 span5">
 		  <h2 class="centered">Schedule of Events</h2>
-          	<h5 class="schedule-main centered">SESSION I: Formation | 10:00AM</h5>
-          	<p class="schedule theme-text centered">Remarks by President DeGioia</p>
+      	<h5 class="schedule-main centered">SESSION I: Formation | 10:00AM</h5>
+      	<p class="schedule theme-text centered">Remarks by President DeGioia</p>
 
-          	<h5 class="schedule-main centered">Lunch & Breakout Session I | 11:45AM</h5>
+      	<h5 class="schedule-main centered">Lunch & Breakout Session I | 11:45AM</h5>
 
-          	<h5 class="schedule-main centered">SESSION II: Trials | 12:45PM</h5>
-          	<p class="schedule theme-text centered">Remarks by Father Kevin O’Brien</p>
+      	<h5 class="schedule-main centered">SESSION II: Trials | 12:45PM</h5>
+      	<p class="schedule theme-text centered">Remarks by Father Kevin O’Brien</p>
 
-          	<h5 class="schedule-main centered">Breakout Session II | 2:35PM</h5>
+      	<h5 class="schedule-main centered">Breakout Session II | 2:35PM</h5>
 
-          	<h5 class="schedule-main centered">SESSION III: Coda | 3:05PM</h5>
-          	<p class="schedule theme-text centered">Remarks by Father Raymond Kemp</p>
+      	<h5 class="schedule-main centered">SESSION III: Coda | 3:05PM</h5>
+      	<p class="schedule theme-text centered">Remarks by Father Raymond Kemp</p>
 
-          	<h5 class="schedule-main centered">Breakout Session III | 4:30PM</h5>
-          	<h5 class="schedule-main centered">END | 5:00PM</h5>
-
+      	<h5 class="schedule-main centered">Breakout Session III | 4:30PM</h5>
+      	<h5 class="schedule-main centered">END | 5:00PM</h5>
           <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-        </div><!-- /.span5 -->
-        <div class="span5">
-          <img class="" src="/images/Georgetown_logo.jpg">
-        </div><!-- /.span5 -->
-      </div><!-- /.row -->
+    </div><!-- /.span5 -->
+    <div class="span5">
+      <img class="" src="/images/Georgetown_logo.jpg">
+    </div><!-- /.span5 -->
+  </div><!-- /.row -->
+</div>
 
     <hr class="featurette-divider">
 
-    <div id="speakers">
+    <div class="speakers" id="speakers">
       <h3 class="featurette-heading back-soon centered">Meet the Speakers!</h3>
       
       <div class="row first-row">
@@ -482,83 +506,119 @@
       </div>
 
       <div class="row other-row">
-        <div class="offset4 span4">
+        <div class="offset1 span5">
           <h2>Christopher Wadibia</h2>
           <img class="speaker-pic" src="/images/chris.jpg">
           <h4 class="muted speaker-text">Advocate of Faith and Human Dignity</h4>
         </div>
+        <div class="span5">
+          <h2>Alisha "M'Jestie" Brooks</h2>
+          <!-- Alisha "M'Jestie" Brooks designed a grassroots marketing project that cultivates the dreams of strangers across the world. Dream City University is a community that transforms born entertainers; it is the cornerstone for self-discovery and exploration. With the odds against her at an early age, M'Jestie found success in chasing her wildest dreams as a songwriter.  Though she encountered many challenges, it wasn't long before she was penning hit songs for major recording artists such as: Melanie Fiona, Victoria Beckham and Rihanna landing competitive spots on the Billboard charts.
+
+          M’Jestie is determined to change the world through DCU by creating a physical community that nurses dreams into realities. Through her school, she educates on this philosophy while also teaching practical skills for artists. As an inspirational speaker, M’Jestie shares her stories, struggles and successes and demands that every person unveil their life's purpose.
+          -->
+          <img class="speaker-pic" src="/images/mj.jpg">
+          <h4 class="muted speaker-text">CEO of Dream City University</h4>
+        </div>
       </div>
+    </div>
 
 	<hr class="featurette-divider">
 
-    <h2 class="centered">Check out our videos from last year. <span class="muted"></span></h2>
-
-  	<div class="videos" id="watch">
-    	<iframe width="100%" height="500" src="//www.youtube.com/embed/EB6MY-CWj9s?list=PLsRNoUx8w3rMMDijjXBwQF7Mj_4Lp-yBV" frameborder="0" allowfullscreen></iframe>
-		<p class="last-year-text">TedxGeorgetown 2013 revolved around the theme of <b>“Changemakers</b>.” The conference highlighted university faculty members students may not know outside of academia, including Elizabeth Stanley, a professor of security studies and nonprofit founder, and Francis Slakey, a professor of physics and public policy who is also the first person to have climbed the highest mountain on every continent and surfed every ocean on Earth.</p>
-	</div>
-
+    <div class="row">
+      <div class="span3 offset1">
+        <h2 class="centered">Check out our videos from last year. <span class="muted"></span></h2>
+        <p class="last-year-text">TEDxGeorgetown 2013 revolved around the theme of <b>“Changemakers</b>.” The conference highlighted university faculty members students may not know outside of academia, including Elizabeth Stanley, a professor of security studies and nonprofit founder, and Francis Slakey, a professor of physics and public policy who is also the first person to have climbed the highest mountain on every continent and surfed every ocean on Earth.</p>
+      </div>
+      <div class="span7 videos watch" id="watch">
+        <iframe width="100%" height="500" src="//www.youtube.com/embed/EB6MY-CWj9s?list=PLsRNoUx8w3rMMDijjXBwQF7Mj_4Lp-yBV" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
 
 
     <hr class="featurette-divider">
 
-	  <div id="team">
-      <h3 class="featurette-heading back-soon centered">Check back soon to meet the team!</h3>
+	  <div class="team" id="team">
+      <h3 class="featurette-heading back-soon centered">Meet the Team!</h3>
+      <div class="row">
+        <div class="span3">
+          <h3>Diana</h3>
+          <img class="speaker-pic" src="/images/diane.jpg">
+          <h4 class="muted team-text">Director of Logistics</h4>
+        </div>
+        <div class="span3">
+          <h3>Mona</h3>
+          <img class="speaker-pic" src="/images/mona.jpg">
+          <h4 class="muted team-text">Director of Technology</h4>
+        </div>
+        <div class="span3">
+          <h3>Mary-Bailey</h3>
+          <img class="speaker-pic" src="/images/mary-bailey.jpg">
+          <h4 class="muted team-text">Speaker Liason</h4>
+        </div>
+        <div class="span3">
+          <h3>Kevin</h3>
+          <img class="speaker-pic" src="/images/kevin.jpg">
+          <h4 class="muted team-text">Community Development Coordinator</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3">
+          <h3>DJ</h3>
+          <img class="speaker-pic" src="/images/dj.jpg">
+          <h4 class="muted team-text">Institutional Relations</h4>
+        </div>
+        <div class="span3">
+          <h3>Natalia</h3>
+          <img class="speaker-pic" src="/images/natalia.jpg">
+          <h4 class="muted team-text">Deputy Director of Logistics</h4>
+        </div>
+        <div class="span3">
+          <h3>Randy</h3>
+          <img class="speaker-pic" src="/images/randyp.jpg">
+          <h4 class="muted team-text">Marketing Director</h4>
+        </div>
+        <div class="span3">
+          <h3>Cheryl</h3>
+          <img class="speaker-pic" src="/images/cheryl.jpg">
+          <h4 class="muted team-text">TEDxGeorgetown Chair</h4>
+        </div>
+      </div>
     </div>
 
-<!-- 	<div class="speakers" id="speakers">
+
+
+      <hr class="featurette-divider">
+
+    <div id="sponsers">
+      <h3 class="featurette-heading back-soon centered">Check out our sponsors!</h3>
+      <img class="sponsor-logo sweetgreen" src="/images/sweetgreen.png">
       <div class="row">
-      	<div class="span4">
-      		<h2>Person 1</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 2</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 3</h2>
-      	</div>
+        <div class="offset1 span5">
+          <img class="sponsor-logo" src="/images/rotilogo.png">
+        </div>
+        <div class="span5">
+          <img class="sponsor-logo" src="/images/maracasicepops.png">
+        </div>
       </div>
-
       <div class="row">
-      	<div class="span4">
-      		<h2>Person 4</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 5</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 6</h2>
-      	</div>
+        <div class="offset1 span5">
+          <img class="sponsor-logo" src="/images/wearablejustice.jpg">
+        </div>
+        <div class="span5">
+          <img class="sponsor-logo" src="/images/capitolcandy.jpg">
+        </div>
       </div>
-
       <div class="row">
-      	<div class="span4">
-      		<h2>Person 7</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 8</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Person 9</h2>
-      	</div>
+        <div class="offset1 span5">
+          <img class="sponsor-logo" src="/images/brownies.jpg">
+        </div>
+        <div class="span5">
+          <img class="sponsor-logo" src="/images/lilslytebytes.jpg">
+        </div>
       </div>
-    </div> -->
+    </div>
 
-
-<!-- 	<hr class="featurette-divider">
-
-	<div class="team" id="team">
-      <div class="row">
-      	<div class="span4">
-      		<h2>Teammate 1</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Teammate 2</h2>
-      	</div>
-      	<div class="span4">
-      		<h2>Teammate 3</h2>
-      	</div>
-      </div> -->
 
       <!-- /END THE FEATURETTES -->
 
@@ -566,8 +626,9 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>	
+        <p class="pull-right"><a id="top">Back to top</a></p>	
         <p>&copy; 2014 TEDxGeorgetown &middot; <a href="mailto:tedx@georgetown.edu">Contact Us</a></p>
+        <p>This independent TEDx event is operated under license from TED.</p>
         <p class="twitter-button"><a class="twitter-follow-button"
  		       href="https://twitter.com/tedxgeorgetown"
       		 data-show-count="false"
@@ -595,7 +656,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="/javascripts/all.js"></script>
+    <!-- < script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
 
     <script>
       !function ($) {
