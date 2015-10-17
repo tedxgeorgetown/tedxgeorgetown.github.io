@@ -17,11 +17,23 @@ body {
   padding-bottom: 0px;
 }
 
+div.container-narrow div.caption img {
+  max-width: 60%;
+  padding-bottom: 10px; 
+}
+
+.logo-main {
+  max-width: 600px;
+}
+
 a .logo-padding {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
+a.mast-img {
+  max-width: 200px;
+}
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -53,7 +65,7 @@ img.header-img {
 }
 
 .navbar-fixed-top {
-  min-height: 120px;
+  min-height: 220px;
 }
 
 div.videos {
@@ -67,11 +79,12 @@ div.container-narrow {
 }
 
 div.caption {
-  margin-top: -55vh;
-  color: white;
-  text-align: right;
+  text-align: left;
+  margin-top: -80vh;
+  margin-left: -14%;
+  color: black;
   position: absolute;
-  right: 10%;
+  max-width: 70%;
 }
 
 h1.main {
@@ -108,7 +121,8 @@ span.tred {
 }
 
 .logo-text-middle {
-  margin-top: -20px;
+  padding-top: 10px;
+  padding-left: 17px;
 }
 
 .logo-text-bottom {
@@ -130,7 +144,7 @@ span.tred {
 }
 
 .theme-head {
-  padding-top: 55px;
+  padding-top: 100px;
 }
 
 .last-year-text {
@@ -203,15 +217,36 @@ div.last-row {
   margin-left: 10%;
 }
 
-.team-text {
-
-}
-
-.navbar {
+div.navbar {
   position: fixed;
   left: -5px;
   width: 105%;
   margin-top: -20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+}
+
+a.brand.mast-img {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.navbar li {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 6px;
+  padding-left: 6px;
+  text-decoration: none;
+}
+
+.navbar li .hover {
+  background-color: #DDDCDA;
+  border: none;
+  text-decoration: none;
+  text-shadow: none;
 }
 
 .sponsor-logo {
@@ -222,13 +257,25 @@ div.last-row {
   margin-left: 5%;
 }
 
-.navbar .brand {
-padding: 14px 20px 16px 50px;
-}
-
 .span7.videos.watch {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.about-text p {
+  text-align: center;
+}
+
+div.carousel-inner {
+  background-image: url("/images/risk-takers.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.lead {
+  margin-bottom: 10px;
 }
 
 

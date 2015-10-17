@@ -31,6 +31,8 @@
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
 
+    <script src="/javascripts/countdown.js"></script>
+
     <style>
 
     /* GLOBAL STYLES
@@ -70,17 +72,12 @@
               box-shadow: 0 2px 10px rgba(0,0,0,.25);
     }
 
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
+      color: black;
       padding: 15px 20px;
+      text-shadow: none;
     }
 
     /* Offset the responsive button for proper vertical alignment */
@@ -277,8 +274,8 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
@@ -291,7 +288,7 @@
     ================================================== -->
     <div class="navbar-wrapper">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar">
           <div class="navbar-inner">
           <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -302,16 +299,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a id="brand" class="brand">TEDxGeorgetown</a>
+            <a id="brand" class="brand mast-img"> <img src="/images/new_logo_notagblack.png"> </a>
 
             <div class="nav-collapse">
               <ul class="nav">
 
-                <li><a id="about-link">About TEDx</a></li>
                 <li><a id="theme-link">Theme</a></li>
                 <li><a id="speakers-link">Speakers</a></li>
                 <li><a id="watch-link">Watch</a></li>
                 <li><a id="team-link">The Team</a></li>
+                <li><a id="about-link">About TEDx</a></li>
 
               </ul>
             </div>
@@ -325,11 +322,11 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img class="img-responsive" src="/images/tedx_elizabeth.jpg" alt="">
+          <!-- <img class="img-responsive" src="/images/risk-takers.jpg" alt=""> -->
           <div class="container">
           </div>
         </div>
-        <div class="item">
+<!--         <div class="item">
           <img class="img-responsive" src="/images/background2.png" alt="">
           <div class="container">
           </div>
@@ -348,7 +345,7 @@
           <img class="img-responsive" src="/images/background5.png" alt="">
           <div class="container">
           </div>
-        </div>
+        </div> -->
       </div>
 
     </div><!-- /.carousel -->
@@ -360,15 +357,47 @@
       <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> -->
       <!-- <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
 
-    <div class="container">
+<div class="container">
 
-    <div class="container-narrow">
-      <div class="caption">
-  		<h1 class="main"><span class="tred">TED<span class="x">x</span></span>Georgetown</h1>
-  		<p class="lead logo-text-top">12 Speakers. 1500 Participants. Gaston Hall.</p>
-  		<p class="lead logo-text-middle">Saturday November 15th, 2014</p>
-  		<p class="lead logo-text-bottom">Tickets now available.</p>
-  		<a class="btn btn-large btn-danger" target="/blank" href="http://tedxgeorgetown.peatix.com/">Get Tickets</a>
+  <div class="container-narrow">
+    <div class="caption">
+      <img class"header-logo" src="/images/TEDx_logo_whole.png">
+      <div>
+        <p class="lead logo-text-middle">Saturday October 24th, 2015</p>
+        <span>
+          <script>
+            var test1 = new Countdown({
+                  year: 2015,
+                  month:10, 
+                  day:24,
+                  hour:10,
+                  ampm:"am",
+                  width:300, 
+                  height:60, 
+                  rangeHi: "day",
+                  hideLine: 1,
+                  numbers   :   {
+                            font  : "Arial",
+                            color : "#FFFFFF",
+                            bkgd  : "#FF2B06",
+                            rounded : 0.15,
+                            shadow  : {
+                                  x : 0,
+                                  y : 3,
+                                  s : 4,
+                                  c : "#000000",
+                                  a : 0.4 
+                                  }
+                          },
+                  labels : {
+                                         font   : "Arial",
+                                         color  : "black",
+                                         weight : "normal" // < - no comma on last item!
+                                     }
+                  });
+          </script>
+        </span>
+      </div>
   	</div>
 	</div>
 
@@ -376,31 +405,18 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="marketing about" id="about">
+    <div class="marketing about">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="offset3 span6 about-text">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2 class="centered">About TEDx</h2>
-          <p class="centered">In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED experience. TEDxGeorgetown is our initiative to bring the TED experience to Georgetown University. TEDxGeorgetown is currently in its fourth year at Georgetown University. In previous years, it has been highly popular with both students and faculty at Georgetown as well as the DC community. It is a showcase of Georgetown and what its community are capable of.</p>
-          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
-        </div><!-- /.span5 -->
-        <div class="span5">
-          <img class="img-circle" data-src="holder.js/140x140">
-        </div><!-- /.span5 -->
-      </div><!-- row -->
-
-      <hr class="featurette-divider">
 
       <div class="row">
         <div class="theme offset1 span5">
-          <img class="" src="/images/themeannouncement.jpg">
+          <img class="" src="/images/risk-takers-flyer.png">
         </div><!-- /.span5 -->
         <div class="span5">
-          <h2 class="theme-head">Theme: Ithaca</h2>
-          <p class="theme-text-top">Our theme this year really touches on education and achievement as a journey and we hope to create an inherent link to the Georgetown spirit. We would like TEDxGeorgetown to be a sharing of ideas that will come to be innovation and direction for the university. We find it imperative that the vision shapes the message that will resonate with the Georgetown community.</p>
-          <p class="theme-text-bottom">The title "Ithaca" is based on the poem about Ulysses' journey, the point being that it is the journey that matters, not the destination. Different speakers will share their perspectives on the foundation for the principles of a Georgetown education. The event will showcase what the Georgetown community is able to achieve and highlight individuals who have crafted a purpose for themselves and struck out on their own, from social entrepreneurship to advocacy to a successful career, in a way that contributes to the common good.</p>
+          <h2 class="theme-head">Theme: Risk Takers</h2>
+          <p class="theme-text-top">Taking a risk is scary. That’s what makes it a risk. It implies that a very real possibility of not succeeding looms over the decision in question. In some cases, sustaining the status quo appears much more preferable than running the risk of failure. After all, the status quo is familiar and known, providing a sense of comfort. But what is it that pushes some to forgo the comfort of continuity in exchange for the uncertain?</p>
+          <p class="theme-text-bottom">The theme of TEDxGeorgetown 2015, Risk Takers, will give twelve speakers an opportunity to answer that question on the historic Gaston Hall stage. It will be broken into three different sessions, each highlighting different stages or factors of the risk taking process. There will be four speakers in each session and each TEDTalk will last approximately 13-17 minutes. After each session, there will be Breakout Sessions in which the event attendees will have a chance to interact more closely with the speakers they just heard on stage.</p>
           <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
         </div><!-- /.span5 -->
       </div><!-- /.row -->
@@ -412,21 +428,22 @@
 	<div class="row">
 		<div class="offset1 span5">
 		  <h2 class="centered">Schedule of Events</h2>
-      	<h5 class="schedule-main centered">SESSION I: Formation | 10:00AM</h5>
-      	<p class="schedule theme-text centered">Remarks by President DeGioia</p>
+      	<h5 class="schedule-main centered">SESSION I: Inspiration for the Uninspired</h5>
+      	<p class="schedule theme-text centered">Opening Remarks by Co-Chairs | 10:00 a.m.</p>
+        <p class="schedule theme-text centered">Opening Remarks by Session Curator | 10:10 a.m.</p>
 
-      	<h5 class="schedule-main centered">Lunch & Breakout Session I | 11:45AM</h5>
+      	<h5 class="schedule-main centered">Lunch & Breakout Session I | Healy Lawn | 11:45AM</h5>
 
-      	<h5 class="schedule-main centered">SESSION II: Trials | 12:45PM</h5>
-      	<p class="schedule theme-text centered">Remarks by Father Kevin O’Brien</p>
+      	<h5 class="schedule-main centered">SESSION II: Fail Forward | 12:45 p.m.</h5>
+      	<p class="schedule theme-text centered">Opening Remarks by Session Curator</p>
 
-      	<h5 class="schedule-main centered">Breakout Session II | 2:35PM</h5>
+      	<h5 class="schedule-main centered">Breakout Session II | 1st Floor Healy | 2:15 p.m.</h5>
 
-      	<h5 class="schedule-main centered">SESSION III: Coda | 3:05PM</h5>
-      	<p class="schedule theme-text centered">Remarks by Father Raymond Kemp</p>
+      	<h5 class="schedule-main centered">SESSION III: High Risk, High Reward | 3:00 p.m.</h5>
+      	<p class="schedule theme-text centered">Opening Remarks by Session Curator</p>
 
-      	<h5 class="schedule-main centered">Breakout Session III | 4:30PM</h5>
-      	<h5 class="schedule-main centered">END | 5:00PM</h5>
+      	<h5 class="schedule-main centered">Breakout Session III | 1st Floor Healy | 4:30 p.m.</h5>
+      	<h5 class="schedule-main centered">Reception | TBD | 5:15 – 6:00 p.m.</h5>
           <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
     </div><!-- /.span5 -->
     <div class="span5">
@@ -438,11 +455,11 @@
     <hr class="featurette-divider">
 
     <div class="speakers" id="speakers">
-      <h3 class="featurette-heading back-soon centered">Meet the Speakers!</h3>
+      <h3 class="featurette-heading back-soon centered">Speaker Profiles Coming Soon!</h3>
       
-      <div class="row first-row">
+      <!-- <div class="row first-row">
         <div class="offset1 span5">
-          <h2>Andria Wisler</h2>
+          <h2>Andrea Wisler</h2>
           <img class="border speaker-pic" src="/images/andria.jpg">
           <h4 class="muted speaker-text">Executive Director of the Center for Social Justice</h4>
         </div>
@@ -513,14 +530,14 @@
         </div>
         <div class="span5">
           <h2>Alisha "M'Jestie" Brooks</h2>
-          <!-- Alisha "M'Jestie" Brooks designed a grassroots marketing project that cultivates the dreams of strangers across the world. Dream City University is a community that transforms born entertainers; it is the cornerstone for self-discovery and exploration. With the odds against her at an early age, M'Jestie found success in chasing her wildest dreams as a songwriter.  Though she encountered many challenges, it wasn't long before she was penning hit songs for major recording artists such as: Melanie Fiona, Victoria Beckham and Rihanna landing competitive spots on the Billboard charts.
+          <!- - Alisha "M'Jestie" Brooks designed a grassroots marketing project that cultivates the dreams of strangers across the world. Dream City University is a community that transforms born entertainers; it is the cornerstone for self-discovery and exploration. With the odds against her at an early age, M'Jestie found success in chasing her wildest dreams as a songwriter.  Though she encountered many challenges, it wasn't long before she was penning hit songs for major recording artists such as: Melanie Fiona, Victoria Beckham and Rihanna landing competitive spots on the Billboard charts.
 
           M’Jestie is determined to change the world through DCU by creating a physical community that nurses dreams into realities. Through her school, she educates on this philosophy while also teaching practical skills for artists. As an inspirational speaker, M’Jestie shares her stories, struggles and successes and demands that every person unveil their life's purpose.
-          -->
+
           <img class="speaker-pic" src="/images/mj.jpg">
           <h4 class="muted speaker-text">CEO of Dream City University</h4>
         </div>
-      </div>
+      </div> -->
     </div>
 
 	<hr class="featurette-divider">
@@ -528,10 +545,10 @@
     <div class="row">
       <div class="span3 offset1">
         <h2 class="centered">Check out our videos from last year. <span class="muted"></span></h2>
-        <p class="last-year-text">TEDxGeorgetown 2013 revolved around the theme of <b>“Changemakers</b>.” The conference highlighted university faculty members students may not know outside of academia, including Elizabeth Stanley, a professor of security studies and nonprofit founder, and Francis Slakey, a professor of physics and public policy who is also the first person to have climbed the highest mountain on every continent and surfed every ocean on Earth.</p>
+        <p class="last-year-text">TEDxGeorgetown 2014 revolved around the theme of "<b>Ithaca</b>.” <!-- The conference highlighted university faculty members students may not know outside of academia, including Elizabeth Stanley, a professor of security studies and nonprofit founder, and Francis Slakey, a professor of physics and public policy who is also the first person to have climbed the highest mountain on every continent and surfed every ocean on Earth. --></p>
       </div>
       <div class="span7 videos watch" id="watch">
-        <iframe width="100%" height="500" src="//www.youtube.com/embed/EB6MY-CWj9s?list=PLsRNoUx8w3rMMDijjXBwQF7Mj_4Lp-yBV" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/wWMR0S1eyGY?list=PLooMjOjmCBMRrlmsPTitUerxgubj5ORXg" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -539,9 +556,9 @@
     <hr class="featurette-divider">
 
 	  <div class="team" id="team">
-      <h3 class="featurette-heading back-soon centered">Meet the Team!</h3>
+      <h3 class="featurette-heading back-soon centered">Team Info Coming Soon!</h3>
       <div class="row">
-        <div class="span3">
+        <!-- <div class="span3">
           <h3>Diana</h3>
           <img class="speaker-pic" src="/images/diane.jpg">
           <h4 class="muted team-text">Director of Logistics</h4>
@@ -582,13 +599,13 @@
           <h3>Cheryl</h3>
           <img class="speaker-pic" src="/images/cheryl.jpg">
           <h4 class="muted team-text">TEDxGeorgetown Chair</h4>
-        </div>
+        </div> -->
       </div>
     </div>
 
 
 
-      <hr class="featurette-divider">
+<!--       <hr class="featurette-divider">
 
     <div id="sponsers">
       <h3 class="featurette-heading back-soon centered">Check out our sponsors!</h3>
@@ -619,15 +636,26 @@
       </div>
     </div>
 
+    <hr class="featurette-divider" id="about"> -->
 
-      <!-- /END THE FEATURETTES -->
+      <div class="row">
+        <div class="offset3 span6 about-text">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2 class="centered">About TEDx</h2>
+          <p class="centered">In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED experience. TEDxGeorgetown is our initiative to bring the TED experience to Georgetown University. TEDxGeorgetown is currently in its fourth year at Georgetown University. In previous years, it has been highly popular with both students and faculty at Georgetown as well as the DC community. It is a showcase of Georgetown and what its community are capable of.</p>
+          <p><a class="btn btn-info details-button" target="_blank" href="https://www.ted.com/about/programs-initiatives/tedx-program">View details &raquo;</a></p>
+        </div><!-- /.span5 -->
+        <div class="span5">
+          <img class="img-circle" data-src="holder.js/140x140">
+        </div><!-- /.span5 -->
+      </div><!-- row -->
 
-      <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a id="top">Back to top</a></p>	
-        <p>&copy; 2014 TEDxGeorgetown &middot; <a href="mailto:tedx@georgetown.edu">Contact Us</a></p>
+        <p class="pull-right"><a href="" id="top">Back to top</a></p>	
+        <p>&copy; 2015 TEDxGeorgetown &middot; <a href="mailto:tedx@georgetown.edu">Contact Us</a></p>
         <p>This independent TEDx event is operated under license from TED.</p>
         <p class="twitter-button"><a class="twitter-follow-button"
  		       href="https://twitter.com/tedxgeorgetown"

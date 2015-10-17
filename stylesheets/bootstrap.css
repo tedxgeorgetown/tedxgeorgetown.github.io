@@ -78,11 +78,6 @@ a:focus {
   outline-offset: -2px;
 }
 
-a:hover,
-a:active {
-  outline: 0;
-}
-
 sub,
 sup {
   position: relative;
@@ -234,12 +229,6 @@ body {
 a {
   color: #0088cc;
   text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #005580;
-  text-decoration: underline;
 }
 
 .img-rounded {
@@ -654,7 +643,7 @@ p {
 }
 
 .lead {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
@@ -678,11 +667,6 @@ cite {
 
 .muted {
   color: #999999;
-}
-
-a.muted:hover,
-a.muted:focus {
-  color: #808080;
 }
 
 .text-warning {
@@ -2955,7 +2939,6 @@ table th[class*="span"],
   white-space: nowrap;
 }
 
-.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
@@ -2972,7 +2955,6 @@ table th[class*="span"],
 }
 
 .dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
@@ -2988,12 +2970,11 @@ table th[class*="span"],
 }
 
 .dropdown-menu > .disabled > a,
-.dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
   color: #999999;
 }
 
-.dropdown-menu > .disabled > a:hover,
+
 .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   cursor: default;
@@ -3078,10 +3059,6 @@ table th[class*="span"],
   border-style: solid;
   border-width: 5px 0 5px 5px;
   content: " ";
-}
-
-.dropdown-submenu:hover > a:after {
-  border-left-color: #ffffff;
 }
 
 .dropdown-submenu.pull-left {
@@ -3957,12 +3934,6 @@ input[type="submit"].btn.btn-mini {
   display: block;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
 .nav > li > a > img {
   max-width: none;
 }
@@ -4352,17 +4323,6 @@ input[type="submit"].btn.btn-mini {
   *border-left-color: #ffffff;
 }
 
-.nav > .disabled > a {
-  color: #999999;
-}
-
-.nav > .disabled > a:hover,
-.nav > .disabled > a:focus {
-  text-decoration: none;
-  cursor: default;
-  background-color: transparent;
-}
-
 .navbar {
   *position: relative;
   *z-index: 2;
@@ -4415,7 +4375,6 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px 20px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4436,11 +4395,6 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-link {
   color: #777777;
-}
-
-.navbar-link:hover,
-.navbar-link:focus {
-  color: #333333;
 }
 
 .navbar .divider-vertical {
@@ -4623,22 +4577,10 @@ input[type="submit"].btn.btn-mini {
   margin-top: 8px;
 }
 
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:focus {
   color: #333333;
   text-decoration: none;
   background-color: transparent;
-}
-
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
-  color: #555555;
-  text-decoration: none;
-  background-color: #e5e5e5;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 
 .navbar .btn-navbar {
@@ -4807,13 +4749,6 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a {
   color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.navbar-inverse .brand:hover,
-.navbar-inverse .nav > li > a:hover,
-.navbar-inverse .brand:focus,
-.navbar-inverse .nav > li > a:focus {
-  color: #ffffff;
 }
 
 .navbar-inverse .brand {
@@ -5662,7 +5597,6 @@ a.thumbnail:focus {
   display: none;
 }
 
-a.label:hover,
 a.label:focus,
 a.badge:hover,
 a.badge:focus {
