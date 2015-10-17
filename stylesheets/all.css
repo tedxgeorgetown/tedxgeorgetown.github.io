@@ -278,6 +278,9 @@ div.carousel-inner {
   margin-bottom: 10px;
 }
 
-
+.navbar .nav li a.navigation-button {
+  border-radius: 5px;
+  color: white;
+}
 
 
